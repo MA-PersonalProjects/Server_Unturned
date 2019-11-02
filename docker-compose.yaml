@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  unturned_server:
+    image: unturned_server:0.0
+    ports:
+      - "27015:27015/udp"
+      - "27016:27016/udp"
+    entrypoint: ["tail", "-f", "/dev/null"]
